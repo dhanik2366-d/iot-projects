@@ -1,0 +1,17 @@
+movies = {
+    "Action": ["KGF", "Pushpa", "Leo"],
+    "Comedy": ["Jathi Ratnalu", "F2", "DJ Tillu"],
+    "Sci-Fi": ["Interstellar", "Inception", "Avatar"]
+}
+
+print("Movie Recommendation System")
+print("---------------------------")
+
+genre = input("Enter genre (Action/Comedy/Sci-Fi): ")
+
+if genre in movies:
+    print("Recommended Movies:")
+    for movie in movies[genre]:
+        print("-", movie)
+else:
+    print("Genre not found")
